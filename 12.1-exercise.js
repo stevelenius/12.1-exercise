@@ -88,55 +88,95 @@ function mousePressed(event) {
 // if this song is not playing, start it;
 // if another song is playing, stop it and start playing this one
     if (key===4) {
-        if (song5.isPlaying()) {
-            song5.stop();
-        } else {
-        song1.stop();
-        song2.stop();
-        song3.stop();
-        song4.stop();
-        song5.play();
-        } 
-    } else if (key===3) {
-        if (song4.isPlaying()) {
-            song4.stop();
-        } else {
-        song5.stop();
-        song3.stop();
-        song2.stop();
-        song1.stop();
-        song4.play();
-        }
-    } else if (key===2) {
-        if (song3.isPlaying()) {
-            song3.stop();
-        } else {
-        song5.stop();
-        song4.stop();
-        song2.stop();
-        song1.stop();
-        song3.play();
-        }
-    } else if (key===1) {
-        if (song2.isPlaying()) {
-            song2.stop();
-        } else {
-        song5.stop();
-        song4.stop();
-        song3.stop();
-        song1.stop();
-        song2.play();
-        }
-    } else {
+      if (song5.isPlaying()) {
+          song5.stop();
+      } else {
         if (song1.isPlaying()) {
-            song1.stop();
-        } else {
-        song5.stop();
-        song4.stop();
-        song3.stop();
-        song2.stop();
-        song1.play();
-        }
+          song1.stop();
+        };
+        if (song2.isPlaying()) {
+          song2.stop();
+        };
+        if (song3.isPlaying()) {
+          song3.stop();
+        };
+        if (song4.isPlaying()) {
+          song4.stop();
+        };
+        song5.play();
+      }
+    } else if (key===3) {
+      if (song4.isPlaying()) {
+          song4.stop();
+      } else {
+        if (song1.isPlaying()) {
+          song1.stop();
+        };
+        if (song2.isPlaying()) {
+          song2.stop();
+        };
+        if (song3.isPlaying()) {
+          song3.stop();
+        };
+        if (song5.isPlaying()) {
+          song5.stop();
+        };
+        song4.play();
+      }
+    } else if (key===2) {
+      if (song3.isPlaying()) {
+          song3.stop();
+      } else {
+        if (song1.isPlaying()) {
+          song1.stop();
+        };
+        if (song2.isPlaying()) {
+          song2.stop();
+        };
+        if (song4.isPlaying()) {
+          song4.stop();
+        };
+        if (song5.isPlaying()) {
+          song5.stop();
+        };
+      song3.play();
+      }
+    } else if (key===1) {
+      if (song2.isPlaying()) {
+          song2.stop();
+      } else {
+        if (song1.isPlaying()) {
+          song1.stop();
+        };
+        if (song3.isPlaying()) {
+          song3.stop();
+        };
+        if (song4.isPlaying()) {
+          song4.stop();
+        };
+        if (song5.isPlaying()) {
+          song5.stop();
+        };
+      song2.play();
+      }
+    } else {
+      if (song1.isPlaying()) {
+          song1.stop();
+      } else {
+        if (song5.isPlaying()) {
+          song5.stop();
+        };
+        if (song4.isPlaying()) {
+          song4.stop();
+        };
+        if (song3.isPlaying()) {
+          song3.stop();
+        };
+        if (song2.isPlaying()) {
+          song2.stop();
+        };
+      song1.play();
+      }
     }
   }
 }
