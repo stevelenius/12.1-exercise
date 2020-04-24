@@ -24,16 +24,16 @@ function setup() {
   createCanvas(720, 400);
 
 // "Bell beats" loop created by esistnichtsoernst (source: Freesound.org)
-  song1 = loadSound('sounds/bell.wav');
+  song1 = loadSound('sounds/bell.mp3');
 // "From the clouds (loopable)" created by MSFX (source: Freesound.org)
-  song2 = loadSound('sounds/clouds.wav');
+  song2 = loadSound('sounds/clouds.mp3');
 // "MusicLoop1" created by senkoro (source: Freesound.org)
-  song3 = loadSound('sounds/loop.wav');
+  song3 = loadSound('sounds/loop.mp3');
 // Loop created from Symplesound's "Purple Drums" Ableton loops 
 // honoring Prince
-  song4 = loadSound('sounds/prince.wav');
+  song4 = loadSound('sounds/prince.mp3');
 //"Tempo" loop created by B-Sean (source: Freesound.org)
-  song5 = loadSound('sounds/tempo.wav');
+  song5 = loadSound('sounds/tempo.mp3');
   textFont(myFont);
   stroke(255, 128, 255)
 }
